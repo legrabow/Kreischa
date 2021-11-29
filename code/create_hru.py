@@ -13,7 +13,6 @@ def main(pathToLanduse, pathToSoil, pathToHru, levelOfDetail):
    
     ## prepare land use layer
     landuse = gpd.read_file(pathToLanduse)
-    levelOfDetail = "HG" # HG, UG or Bestand
 
     if levelOfDetail == "HG":
         uniqueColumn = landuse.HG.astype(str)
@@ -23,14 +22,16 @@ def main(pathToLanduse, pathToSoil, pathToHru, levelOfDetail):
         uniqueColumn = landuse.HG.astype(str) + landuse.UG.astype(str) + landuse.BESTAND.astype(str)
 
     landuse["uniqueColumn"] = uniqueColumn
-    landuseReduced = landuse.dissolve(by = "uniqueColumn")
+    landuseReduced = landuse.dissolve(by = "uniqueColumn", as_index= False)
     landuseReduced.drop(landuseReduced.columns.difference(['uniqueColumn','geometry']), 1, inplace=True)
 
     ## prepare soil layer
     soil = gpd.read_file(pathToSoil)
-    soilReduced = soil.dissolve(by = "BOTYP")
+    soilReduced = soil.dissolve(by = "BOTYP", as_index= False)
     soilReduced.drop(soilReduced.columns.difference(['BOTYP','geometry']), 1, inplace=True)
 
     ## create HRUs
     hru = soilReduced.overlay(landuseReduced, how='union')
     hru.to_file(pathToHru)
+    hruContiguous = hru.explode(index_parts=False)
+    hruContiguous.to_file(pathToHru)
