@@ -33,5 +33,5 @@ def main(pathToLanduse, pathToSoil, pathToHru, levelOfDetail):
     ## create HRUs
     hru = soilReduced.overlay(landuseReduced, how='union')
     hru.to_file(pathToHru)
-    hruContiguous = hru.explode(index_parts=False)
+    hruContiguous = hru.explode(index_parts=True)
     hruContiguous.to_file(pathToHru)
