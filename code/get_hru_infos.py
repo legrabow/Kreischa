@@ -3,11 +3,30 @@
 # WARNING: HRUs and DEM must have the same crs. please check beforehand!
 
 import fiona
+from fiona import transform
 import numpy as np
 import rasterio
 from rasterio import mask as msk
 from shapely.geometry import shape, Polygon
 import richdem as rd
+
+def clean_hruDict(hruDict):
+    hruDictClean = {}
+    for hruID in hruDict:
+        infoDict = hruDict[hruID]
+        # check for nan and None types
+        anyNAs = []
+        for val in infoDict.values():
+            try:
+                b1 = np.isnan(val)
+            except TypeError:
+                b1 = False
+            b2 = not bool(val)
+            bMerged = b1 or b2
+            anyNAs.append(bMerged)
+        if not np.any(anyNAs):
+            hruDictClean[hruID] = infoDict
+    return hruDictClean
 
 def get_box(tiffArray, wholeArea, increaseBy = 0):
     # NO USE
@@ -32,7 +51,8 @@ def get_elevation(tiffArray):
 
 def get_area(subShape):
     pol = Polygon(subShape["coordinates"][0])
-    area = pol.area
+    # get area in km^2
+    area = pol.area * 10**(-6)
     centroidPoint = pol.centroid
     return area, centroidPoint
 
@@ -45,7 +65,7 @@ def get_polgyons(pathToShapes):
             sbbDict[name] = pol
     return sbbDict
 
-def convert_to_standard(tiffArray):
+def convert_to_standard(tiffArray, metaInfo):
     # assign np.nan to no datas
     tiffArray = tiffArray.astype("float")
     tiffArray[tiffArray == metaInfo["nodata"]] = np.nan
@@ -59,7 +79,7 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
         metaInfo = src.meta
         wholeArea = src.read()
 
-        wholeArea = convert_to_standard(wholeArea)
+        wholeArea = convert_to_standard(wholeArea, metaInfo)
 
         # prepare richdem array
         rdArray  = rd.rdarray(wholeArea, no_data=np.nan)
@@ -86,13 +106,14 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                 counter = 0
                 # open HRU shape file and iterate for each hrus
                 with fiona.open(pathToHRUs, "r") as shf:
+                    hrusCrs = shf.crs["init"]
                     for hru in shf:
                         infoDict = {}
                         shapefileObj = hru["geometry"]
 
                         # get DEM mask for HRU and get the mean elevation
                         outputTiff, outputTransform = msk.mask(src, [shapefileObj], crop=True)
-                        outputTiff = convert_to_standard(outputTiff)
+                        outputTiff = convert_to_standard(outputTiff, metaInfo)
                         elevation = get_elevation(outputTiff)
                         infoDict["elevation"] = elevation
 
@@ -100,8 +121,10 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         area, centroidPoint = get_area(shapefileObj)
                         lon = centroidPoint.x
                         lat = centroidPoint.y
-                        infoDict["lon"] = lon
-                        infoDict["lat"] = lat
+                        lonDeg, latDeg = transform.transform(hrusCrs, "epsg:4326", [lon], [lat])
+                        infoDict["lon"] = lonDeg[0]
+                        infoDict["lat"] = latDeg[0]
+                        infoDict["area"] = area
 
                         # get slope and aspect of the centroid point
                         slopeGen = srcSlope.sample([(lon, lat)])
@@ -119,6 +142,11 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                                 break
                         infoDict["subbasinID"] = subbasinID
 
-                        name = str(hru["properties"]["level_0"]) + str(hru["properties"]["level_0"])
-                        hruDict[name] = infoDict
+                        # add land use class
+                        infoDict["landuse"] = hru["properties"]["unique"]
+                        # add soil class
+                        infoDict["soil"] = hru["properties"]["BOTYP"]
+
+                        hruID = str(hru["properties"]["level_0"]) + str(hru["properties"]["level_0"])
+                        hruDict[hruID] = infoDict
     return hruDict
