@@ -1,1 +1,0 @@
-ERROR : ParseClassPropertiesFile:  :SoilProfiles invalid command length
