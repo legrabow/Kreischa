@@ -111,12 +111,6 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         infoDict = {}
                         shapefileObj = hru["geometry"]
 
-                        # get DEM mask for HRU and get the mean elevation
-                        outputTiff, outputTransform = msk.mask(src, [shapefileObj], crop=True)
-                        outputTiff = convert_to_standard(outputTiff, metaInfo)
-                        elevation = get_elevation(outputTiff)
-                        infoDict["elevation"] = elevation
-
                         # get the area and lat / lon of the centroid point for the HRU
                         area, centroidPoint = get_area(shapefileObj)
                         lon = centroidPoint.x
@@ -126,6 +120,24 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         infoDict["lat"] = latDeg[0]
                         infoDict["area"] = area
 
+                        # find subbasin of the HRU
+                        subbasinID = None
+                        for name in sbbDict:
+                            pol = sbbDict[name]
+                            if pol.contains(centroidPoint):
+                                subbasinID = int(name)
+                                break
+                        if subbasinID:
+                            infoDict["subbasinID"] = subbasinID
+                        else:
+                            continue
+
+                        # get DEM mask for HRU and get the mean elevation
+                        outputTiff, outputTransform = msk.mask(src, [shapefileObj], crop=True)
+                        outputTiff = convert_to_standard(outputTiff, metaInfo)
+                        elevation = get_elevation(outputTiff)
+                        infoDict["elevation"] = elevation
+
                         # get slope and aspect of the centroid point
                         slopeGen = srcSlope.sample([(lon, lat)])
                         slopePoint = [point for point in slopeGen]
@@ -133,14 +145,6 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         aspectPoint = [point for point in aspectgen]
                         infoDict["slopePoint"] = slopePoint[0][0]
                         infoDict["aspectPoint"] = aspectPoint[0][0]
-
-                        # find subbasin of the HRU
-                        for name in sbbDict:
-                            pol = sbbDict[name]
-                            if pol.contains(centroidPoint):
-                                subbasinID = int(name)
-                                break
-                        infoDict["subbasinID"] = subbasinID
 
                         # add land use class
                         infoDict["landuse"] = hru["properties"]["unique"]
