@@ -5,7 +5,6 @@
 :SoilClasses
   :Attributes %SAND %CLAY %SILT %ORGANIC
   :Units none none none none
-gS 0.85 0.05 0.1 0
 It4 0.35 0.2 0.45 0.03
 Ls2 0.35 0.2 0.45 0.03
 Ls3 0.45 0.2 0.35 0.03
@@ -49,7 +48,7 @@ Ut4 0.09 0.21 0.7 0.01
 493 5 Ut4 0.15 Ut4 0.15 Ut3 0.05 Lu 0.35 Ut4 0.8
 494 4 Ut3 0.3 Ut3 0.18 Ut4 0.27 Ut4 0.75
 495 6 Uls 0.3 Ut4 0.1 Ut4 0.5 Ut4 0.35 Tu3 0.35 Sl2 0.4
-496 5 Ut4 0.15 It4 0.15 Tu4 0.25 Ut4 0.45 Ut4 0.5
+496 5 Ut4 0.15 Ut4 0.15 Tu4 0.25 Ut4 0.45 Ut4 0.5
 497 5 Uls 0.05 Uls 0.35 Su3 0.25 Su2 0.2 Su2 0.4
 498 5 Ut3 0.25 Ut3 0.15 Ut4 0.3 Ut3 0.2 Lts 0.3
 499 6 Slu 0.1 Slu 0.3 Su4 0.2 Su3 0.25 Sl2 0.25 Sl2 0.3
