@@ -3,7 +3,7 @@
 # HBV-EC Nith River emulation test case
 # ----------------------------------------------
 # --Simulation Details -------------------------
-:StartDate       2001-10-01 00:00:00
+:StartDate       2002-10-01 00:00:00
 :Duration        730                # Oct 1 2002 to Sept 30 2004
 :Method          ORDERED_SERIES
 :TimeStep        1.0
@@ -47,7 +47,6 @@
 #
 # --Output Options-------------------------------
 #
-:EndPause            NO
 :WriteForcingFunctions
 :CustomOutput DAILY AVERAGE SNOW BY_HRU
 :AggregatedVariable FAST_RESERVOIR AllHRUs

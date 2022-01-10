@@ -1,11 +1,10 @@
 # --------------------------------------------
-# Raven Example Classed Parameter File
 # --------------------------------------------
 # Class definition ---------------------------
 :SoilClasses
   :Attributes %SAND %CLAY %SILT %ORGANIC
   :Units none none none none
-It4 0.35 0.2 0.45 0.03
+gS 0.85 0.05 0.1 0
 Ls2 0.35 0.2 0.45 0.03
 Ls3 0.45 0.2 0.35 0.03
 Ls4 0.55 0.2 0.25 0.01
@@ -31,146 +30,152 @@ Uls 0.3 0.12 0.58 0.03
 Ut3 0.11 0.15 0.74 0
 Ut4 0.09 0.21 0.7 0.01
 :EndSoilClasses
-:SoilProfiles 
-# name #horizons hor1 th1 hor2 th2 hor3 th3 hor4 th4 hor5 th5 hor6 th6 hor7 th7
-121 2 Sl4 0.02 Sl4 1.18
-261 3 Slu 0.23 Slu 0.21 Slu 0.76
-265 3 Uls 0.2 Uls 0.52 Sl4 0.48
-269 3 Slu 0.26 Slu 0.24 Sl4 0.7
-276 3 Sl3 0.23 Sl3 0.32 Sl4 0.65
-279 6 Sl2 0.1 Uls 0.35 Su4 0.45 Uls 0.4 Su4 0.2 Su2 0.5
-294 6 Lu 0.1 Lu 0.1 Lt2 0.3 Lt2 0.45 Sl4 0.3 Sl3 0.35
-300 3 Sl3 0.1 Sl4 0.35 Sl3 0.75
-345 3 Lu 0.27 Ut4 0.32 Slu 0.61
-346 3 Lu 0.27 Ut4 0.32 Slu 0.61
-357 3 Sl3 0.08 Sl3 0.22 Sl3 0.9
-492 5 Ut4 0.15 Ut4 0.15 Ut3 0.05 Lu 0.35 Ut4 0.8
-493 5 Ut4 0.15 Ut4 0.15 Ut3 0.05 Lu 0.35 Ut4 0.8
-494 4 Ut3 0.3 Ut3 0.18 Ut4 0.27 Ut4 0.75
-495 6 Uls 0.3 Ut4 0.1 Ut4 0.5 Ut4 0.35 Tu3 0.35 Sl2 0.4
-496 5 Ut4 0.15 Ut4 0.15 Tu4 0.25 Ut4 0.45 Ut4 0.5
-497 5 Uls 0.05 Uls 0.35 Su3 0.25 Su2 0.2 Su2 0.4
-498 5 Ut3 0.25 Ut3 0.15 Ut4 0.3 Ut3 0.2 Lts 0.3
-499 6 Slu 0.1 Slu 0.3 Su4 0.2 Su3 0.25 Sl2 0.25 Sl2 0.3
-500 5 Ut4 0.1 Ut4 0.25 Uls 0.25 Ls2 0.3 Ls2 0.3
-501 6 Slu 0.03 Slu 0.12 Slu 0.25 Sl3 0.2 Sl3 0.2 Sl4 0.5
-502 4 Uls 0.31 Slu 0.14 Sl3 0.23 Sl3 0.52
-503 3 Slu 0.28 Sl4 0.24 Sl4 0.68
-504 5 Slu 0.15 Uls 0.1 Uls 0.35 Ls2 0.2 Ls2 0.7
-505 6 Uls 0.3 Uls 0.15 Uls 0.15 Uls 0.09 Sl3 0.81 Sl3 0.5
-507 5 Ls2 0.1 Ls2 0.2 Sl4 0.2 Lts 0.4 Sl3 0.6
-509 3 Lu 0.1 Ut3 0.2 Ut4 0.9
-510 7 Uls 0.2 Uls 0.2 Ls2 0.15 Sl3 0.1 St2 0.25 St3 0.2 St2 0.4
-511 5 Lu 0.15 Uls 0.2 Lu 0.15 Lt2 0.3 Lts 0.5
-512 4 Uls 0.3 Ls2 0.1 Uls 0.2 Ls4 0.7
-514 4 Slu 0.03 Sl4 0.37 Ls4 0.3 Sl3 0.6
-515 6 Sl4 0.03 Sl3 0.37 Sl2 0.2 Sl2 0.3 Sl4 0.3 Sl4 0.3
-516 4 Sl4 0.05 Sl4 0.1 Sl3 0.45 Slu 0.6
-518 3 Slu 0.23 Slu 0.12 Slu 0.85
-519 3 Slu 0.05 Sl3 0.25 Sl2 0.9
-520 6 Sl4 0.15 Sl4 0.1 Sl4 0.35 Sl2 0.45 gS 0.1 gS 0.15
-522 7 Su2 0.02 Su2 0.38 St2 0.1 St2 0.05 mSgs 0.25 Sl2 0.2 mSgs 0.5
-524 5 Ls2 0.2 Ls2 0.15 Lt3 0.1 Lt2 0.25 Lt3 0.5
-525 4 Sl3 0.15 Ls3 0.45 Slu 0.2 Ls2 0.4
-526 6 Sl2 0.03 St2 0.07 mSfs 0.2 mSfs 0.2 mSfs 0.2 Sl2 0.55
-527 5 Sl2 0.03 Sl2 0.37 Sl3 0.4 St2 0.3 Su2 0.4
-531 4 Slu 0.15 Ls2 0.3 Slu 0.1 Sl2 0.65
-532 5 Lu 0.03 Lt2 0.12 Tu3 0.25 Lu 0.3 Sl3 0.5
-533 2 mSgs 0.01 mSgs 1.19
-534 2 Sl3 0.05 Sl2 1.15
-536 2 Sl2 0.01 Sl2 1.99
-538 4 Sl3 0.15 Sl3 0.25 Su2 0.4 Su4 0.4
-557 5 Ut3 0.28 Ut3 0.37 Ut3 0.35 Ut4 0.3 Lu 0.2
-750 6 Ls2 0.22 Slu 0.88 Slu 0.3 Slu 0.2 Ls2 0.15 St2 0.25
-935 3 Uls 0.05 Uls 0.11 Sl2 1.14
-976 5 Ls2 0.2 Ls2 0.15 Lu 0.45 Lu 0.35 Lu 0.35
-978 5 Ls4 0.25 Ls4 0.3 Lts 0.1 Lts 0.15 St2 0.7
-979 5 mSfs 0.15 mS  0.3 mS  0.25 mS  0.15 mS 0.45
-2002 2 Uls 0.03 Uls 1.17
-2005 3 Uls 0.29 Uls 0.46 Sl3 0.45
+:SoilProfiles
+# name #horizons hor1 th1 hor2 th2 hor3 th3
+S_261 3 Sl4 0.02 Sl4 0.59 Sl4 0.59
+S_345 3 Slu 0.23 Slu 0.21 Slu 0.76
+S_492 3 Uls 0.2 Uls 0.52 Sl4 0.48
+S_522 3 Slu 0.26 Slu 0.24 Sl4 0.7
+S_513 3 Sl3 0.23 Sl3 0.32 Sl4 0.65
+S_299 3 Sl2 0.1 Uls 1.5 Su3 0.45
+S_1103 3 Lu 0.2 Lt2 0.75 Sl3 0.75
+S_505 3 Sl3 0.1 Sl4 0.35 Sl3 0.75
+S_500 3 Lu 0.27 Ut4 0.32 Slu 0.61
+S_276 3 Sl3 0.08 Sl3 0.22 Sl3 0.9
+S_491 3 Ut4 0.35 Lu 0.35 Ut4 0.8
+S_265 3 Ut3 0.3 Ut3 0.18 Ut4 1.02
+S_293 3 Uls 0.3 Ut4 1.3 Sl2 0.4
+S_496 3 Ut4 0.15 Ut4 0.15 Tu4 1.2
+S_507 3 Uls 0.05 Uls 0.35 Su2 0.6
+S_516 3 Ut3 0.4 Ut4 0.5 Lts 0.3
+S_529 3 Slu 0.4 Su3 0.45 Sl2 0.55
+S_525 3 Ut4 0.35 Uls 0.25 Ls2 0.6
+S_121 3 Slu 0.4 Sl3 0.4 Sl4 0.5
+S_279 3 Uls 0.31 Slu 0.14 Sl3 0.75
+S_487 3 Slu 0.28 Sl4 0.24 Sl4 0.68
+S_524 3 Slu 0.15 Uls 0.45 Ls2 0.9
+S_486 3 Uls 0.69 Sl3 0.43 Sl3 0.43
+S_502 3 Ls2 0.5 Lts 0.4 Sl3 0.6
+S_515 3 Lu 0.1 Ut3 0.2 Ut4 0.9
+S_494 3 Uls 0.4 Ls2 0.15 St2 0.95
+S_490 3 Lu 0.5 Lt2 0.3 Lts 0.5
+S_509 3 Uls 0.4 Uls 0.2 Ls4 0.7
+S_493 3 Sl4 0.4 Ls4 0.3 Sl3 0.6
+S_501 3 Sl3 0.4 Sl2 0.5 Sl4 0.6
+S_488 3 Sl4 0.15 Sl3 0.45 Slu 0.6
+S_510 3 Slu 0.23 Slu 0.12 Slu 0.85
+S_269 3 Slu 0.05 Sl3 0.25 Sl2 0.9
+S_498 3 Sl4 0.6 Sl2 0.45 gS 0.25
+S_503 3 Su2 0.55 mSgs 0.45 mSgs 0.5
+S_511 3 Ls2 0.2 Ls2 0.15 Lt3 0.85
 :EndSoilProfiles
+:SoilParameterList
+  :Parameters,  POROSITY,   FIELD_CAPACITY, SAT_WILT, HBV_BETA, MAX_CAP_RISE_RATE,  MAX_PERC_RATE,  BASEFLOW_COEFF, BASEFLOW_N
+  :Units     ,  none,     none,     none,   none,   mm/d,       mm/d,     1/d,      none
+  [DEFAULT],  0.49732,    0.11777,      0.0,    0.57569,  1.1216,       0.0,      0.0,      0.0
+:EndSoilParameterList
 :VegetationClasses
 :Attributes MAXHT MAXLAI MAXLEAFCOND
 :Units m none mmpers
-21 2 250 4
-23 2 250 4
-24 0.5 250 4
-25 2 250 4
-31 2 225 2.5
-32 2 225 2.5
-41 0.5 180 3
-42 0.6 225 2.5
-51 2 250 4
-52 2 250 4
-53 2 250 4
-54 2 180 3
-55 0.7 250 4
-56 2 250 4
-61 5 250 4
-62 5 300 5.3
-63 7 300 5.3
-64 10 250 5.2
-65 4 250 4
-66 1 225 2.5
-67 8 250 4
-71 16 205 5.5
-72 16 500 5
-73 16 300 5.3
-74 16 250 5.2
-75 16 205 5.5
-76 16 500 5
-77 16 300 5.3
-78 6 250 5.2
-79 5 225 2.5
-81 0.8 180 3
-82 1.5 250 4
-91 2 225 2.5
-92 1 225 2.5
-93 2 250 4
-94 2 110 2
-95 2 250 4
-96 2 250 4
+LV_21 2 250 4
+LV_23 2 250 4
+LV_24 0.5 250 4
+LV_25 2 250 4
+LV_31 2 225 2.5
+LV_32 2 225 2.5
+LV_41 0.5 180 3
+LV_42 0.6 225 2.5
+LV_51 2 250 4
+LV_52 2 250 4
+LV_53 2 250 4
+LV_54 2 180 3
+LV_55 0.7 250 4
+LV_56 2 250 4
+LV_61 5 250 4
+LV_62 5 300 5.3
+LV_63 7 300 5.3
+LV_64 10 250 5.2
+LV_65 4 250 4
+LV_66 1 225 2.5
+LV_67 8 250 4
+LV_70 16 205 5.5
+LV_71 16 205 5.5
+LV_72 16 500 5
+LV_73 16 300 5.3
+LV_74 16 250 5.2
+LV_75 16 205 5.5
+LV_76 16 500 5
+LV_77 16 300 5.3
+LV_78 6 250 5.2
+LV_79 5 225 2.5
+LV_81 0.8 180 3
+LV_82 1.5 250 4
+LV_91 2 225 2.5
+LV_92 1 225 2.5
+LV_93 2 250 4
+LV_94 2 110 2
+LV_95 2 250 4
+LV_96 2 250 4
 :EndVegetationClasses
 :LandUseClasses
 :Attributes IMPERMEABLEFRAC FORESTCOVERAGE
 :Units fract fract
-21 0 0
-23 0 0
-24 0 1
-25 1 0
-31 0 0.8
-32 0 0.8
-41 0 1
-42 0 1
-51 1 0
-52 0.4 0.6
-53 1 0
-54 0 0
-55 0 0.9
-56 0.1 0.1
-61 0 0.5
-62 0 0.9
-63 0 1
-64 0 1
-65 0 0.8
-66 0 0.7
-67 0 0.9
-71 0 1
-72 0 1
-73 0 1
-74 0 1
-75 0 1
-76 0 1
-77 0 1
-78 0 1
-79 0 1
-81 0 1
-82 0 0.6
-91 0.4 0.5
-92 0.3 0.5
-93 0.3 0.5
-94 0 1
-95 1 0
-96 0.3 0.3
+LV_21 0 0
+LV_23 0 0
+LV_24 0 1
+LV_25 1 0
+LV_31 0 0.8
+LV_32 0 0.8
+LV_41 0 1
+LV_42 0 1
+LV_51 1 0
+LV_52 0.4 0.6
+LV_53 1 0
+LV_54 0 0
+LV_55 0 0.9
+LV_56 0.1 0.1
+LV_61 0 0.5
+LV_62 0 0.9
+LV_63 0 1
+LV_64 0 1
+LV_65 0 0.8
+LV_66 0 0.7
+LV_67 0 0.9
+LV_70 0 1
+LV_71 0 1
+LV_72 0 1
+LV_73 0 1
+LV_74 0 1
+LV_75 0 1
+LV_76 0 1
+LV_77 0 1
+LV_78 0 1
+LV_79 0 1
+LV_81 0 1
+LV_82 0 0.6
+LV_91 0.4 0.5
+LV_92 0.3 0.5
+LV_93 0.3 0.5
+LV_94 0 1
+LV_95 1 0
+LV_96 0.3 0.3
 :EndLandUseClasses
-# Soil Profile definition -------------------
+:ChannelProfile DEFAULT
+  :Bedslope 0.001
+  :SurveyPoints
+    0 5
+    55 0
+    65 0
+    120 5
+  :EndSurveyPoints
+  :RoughnessZones
+    0 0.035
+  :EndRoughnessZones
+:EndChannelProfile
+#--- Global Parameters -------------------------
+:GlobalParameter RAINSNOW_TEMP     0.0
+:GlobalParameter RAINSNOW_DELTA    1.1559
+:GlobalParameter SNOW_SWI          0.05
+:GlobalParameter AVG_ANNUAL_RUNOFF 350 # mm
+
+# end -------------------

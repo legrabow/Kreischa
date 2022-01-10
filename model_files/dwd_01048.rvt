@@ -1,4 +1,4 @@
-:Multidata
+:MultiData
 	2001-01-01 00:00:00 1.0 7305
 		:Parameters WIND_VEL CLOUD_COVER AIR_PRES TEMP_AVE REL_HUMIDITY TEMP_MAX TEMP_MIN RAINFALL SNOWFALL  SHORTWAVE
 		:Units m/s - kPa degC - degC degC mm/d mm/d MJ/m²/d
