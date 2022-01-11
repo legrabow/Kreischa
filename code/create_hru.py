@@ -27,8 +27,8 @@ def main(pathToLanduse, pathToSoil, pathToHru, levelOfDetail):
 
     ## prepare soil layer
     soil = gpd.read_file(pathToSoil)
-    soilReduced = soil.dissolve(by = "BOTYP", as_index= False)
-    soilReduced.drop(soilReduced.columns.difference(['BOTYP','geometry']), 1, inplace=True)
+    soilReduced = soil.dissolve(by = "LEG_NR_1", as_index= False)
+    soilReduced.drop(soilReduced.columns.difference(['LEG_NR_1','geometry']), 1, inplace=True)
 
     ## create HRUs
     hru = soilReduced.overlay(landuseReduced, how='union')

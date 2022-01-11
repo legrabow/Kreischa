@@ -61,7 +61,7 @@ def get_polgyons(pathToShapes):
     with fiona.open(pathToShapes, "r") as shfSbb:
         for sbb in shfSbb:
             pol = Polygon(sbb["geometry"]["coordinates"][0])
-            name = sbb["properties"]["fid"]
+            name = int(sbb["properties"]["OBJECTID"])
             sbbDict[name] = pol
     return sbbDict
 
@@ -149,7 +149,10 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         # add land use class
                         infoDict["landuse"] = hru["properties"]["unique"]
                         # add soil class
-                        infoDict["soil"] = hru["properties"]["BOTYP"]
+                        try:
+                            infoDict["soil"] = "S_" + str(int(hru["properties"]["LEG_NR_1"]))
+                        except TypeError:
+                            continue
 
                         hruID = str(hru["properties"]["level_0"]) + str(hru["properties"]["level_0"])
                         hruDict[hruID] = infoDict
