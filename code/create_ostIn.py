@@ -1,7 +1,7 @@
 from datetime import datetime
 import pandas as pd
-start = datetime.strptime("01.02.2000","%d.%m.%Y")
-end = datetime.strptime("01.03.2000","%d.%m.%Y")
+start = datetime.strptime("10.01.2002","%d.%m.%Y")
+end = datetime.strptime("20.09.2004","%d.%m.%Y")
 pathToAbfluss = "/home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv"
 pathForOstIn = "/home/grabow/ostrich/ravenApplication/ostIn.txt"
 
@@ -10,7 +10,7 @@ lines = []
 # essential variables
 lines.append("# essential variables")
 lines.append("ProgramType ParticleSwarm")
-lines.append("ModelExecutable \"/home/grabow/raven/bin/Raven.exe\"")
+lines.append("ModelExecutable /home/grabow/raven/bin/Raven.exe")
 lines.append("ObjectiveFunction wsse")
 
 # optional variables
@@ -19,7 +19,7 @@ lines.append("RandomSeed 123")
 
 # file pairs
 lines.append("BeginFilePairs")
-lines.append("\"/home/grabow/ostrich/ravenApplication/template.rvp\" ; \"/home/grabow/raven/bin/Kreischa.rvp\"")
+lines.append("template.rvp ; /home/grabow/raven/bin/Kreischa.rvp")
 lines.append("EndFilePairs")
 
 # parameters
