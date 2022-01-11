@@ -147,7 +147,7 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         infoDict["aspectPoint"] = aspectPoint[0][0]
 
                         # add land use class
-                        infoDict["landuse"] = hru["properties"]["unique"]
+                        infoDict["landuse"] = "LV_" + str(hru["properties"]["unique"])
                         # add soil class
                         try:
                             infoDict["soil"] = "S_" + str(int(hru["properties"]["LEG_NR_1"]))

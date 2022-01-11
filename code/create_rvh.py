@@ -29,10 +29,10 @@ def main(pathForRvh, pathToSubbasinsTable, pathToSubbasinsShape, pathToHRUs, pat
         # add downstream ID
         downstreamID = str(subbasins.TO[sbIdx])
         if downstreamID == "-":
-            downstreamID = "none"
+            downstreamID = "[None]"
         line.append(downstreamID)
         # add profile
-        profile = "default_trap"
+        profile = "DEFAULT"
         line.append(profile)
         # add reach length
         reachLength = "_AUTO"
@@ -99,9 +99,9 @@ def main(pathForRvh, pathToSubbasinsTable, pathToSubbasinsShape, pathToHRUs, pat
         # add soil profile
         line.append(str(infoDict["soil"]))
         # add aquifer profile
-        line.append("none")
+        line.append("[None]")
         # add terrain class
-        line.append("none")
+        line.append("[None]")
         # add slope
         line.append(str(infoDict["slopePoint"]))
         # add aspect
