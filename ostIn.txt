@@ -1,0 +1,51 @@
+# essential variables
+ProgramType Levenberg-Marquardt
+ModelExecutable "/home/grabow/raven/bin/Raven.exe"
+ObjectiveFunction wsse
+# optional variables
+RandomSeed 123
+BeginFilePairs
+"/home/grabow/ostrich/ravenApplication/template.rvp" ; "/home/grabow/raven/bin/Kreischa.rvp"
+EndFilePairs
+BeginParams
+Kal_POROSITY 0.49732 0.0 1.0 none none none free
+Kal_FIELD_CAPACITY 0.11777 0.0 1.0 none none none free
+Kal_SAT_WILT 0.0 0.0 1.0 none none none free
+Kal_HBV_BETA 0.57569 0.0 10.0 none none none free
+Kal_MAX_CAP_RISE_RATE 1.1216 0.0 350.0 none none none free
+Kal_MAX_PERC_RATE 0.0 0.01 1000.0 none none none free
+Kal_BASEFLOW_COEFF 0.05 0.0 1.0 none none none free
+Kal_BASEFLOW_N 1.0 1 10.0 none none none free
+EndParams
+BeginObservations
+Date20000201 1.94 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 1 5 ',' no mw
+Date20000202 1.41 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 2 5 ',' no mw
+Date20000203 1.03 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 3 5 ',' no mw
+Date20000204 0.9 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 4 5 ',' no mw
+Date20000205 0.77 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 5 5 ',' no mw
+Date20000206 0.66 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 6 5 ',' no mw
+Date20000207 0.6 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 7 5 ',' no mw
+Date20000208 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 8 5 ',' no mw
+Date20000209 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 9 5 ',' no mw
+Date20000210 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 10 5 ',' no mw
+Date20000211 0.5 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 11 5 ',' no mw
+Date20000212 0.46 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 12 5 ',' no mw
+Date20000213 0.46 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 13 5 ',' no mw
+Date20000214 0.46 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 14 5 ',' no mw
+Date20000215 0.46 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 15 5 ',' no mw
+Date20000216 0.6 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 16 5 ',' no mw
+Date20000217 0.6 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 17 5 ',' no mw
+Date20000218 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 18 5 ',' no mw
+Date20000219 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 19 5 ',' no mw
+Date20000220 0.6 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 20 5 ',' no mw
+Date20000221 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 21 5 ',' no mw
+Date20000222 0.5 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 22 5 ',' no mw
+Date20000223 0.5 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 23 5 ',' no mw
+Date20000224 0.55 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 24 5 ',' no mw
+Date20000225 0.9 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 25 5 ',' no mw
+Date20000226 1.03 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 26 5 ',' no mw
+Date20000227 0.96 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 27 5 ',' no mw
+Date20000228 0.83 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 28 5 ',' no mw
+Date20000229 0.77 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 29 5 ',' no mw
+Date20000301 0.71 1.00 /home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv ; OST_NULL 30 5 ',' no mw
+EndObservations
