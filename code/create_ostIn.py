@@ -1,7 +1,7 @@
 from datetime import datetime
 import pandas as pd
-start = datetime.strptime("10.01.2002","%d.%m.%Y")
-end = datetime.strptime("20.09.2004","%d.%m.%Y")
+start = datetime.strptime("01.10.2002","%d.%m.%Y")
+end = datetime.strptime("30.09.2004","%d.%m.%Y")
 pathToAbfluss = "/home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv"
 pathForOstIn = "/home/grabow/ostrich/ravenApplication/ostIn.txt"
 
