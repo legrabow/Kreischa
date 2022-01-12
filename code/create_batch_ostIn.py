@@ -4,7 +4,6 @@ startWarmUp = datetime.strptime("01.01.2001","%d.%m.%Y")
 startCalibration = datetime.strptime("01.01.2004","%d.%m.%Y")
 endCalibration = datetime.strptime("31.12.2008","%d.%m.%Y")
 pathToAbfluss = "/home/grabow/git/Kreischa/data/Abfluss_Kreischa_2000_2020.csv"
-pathToAbflussRaven = "/home/grabow/raven/bin/run1_WatershedStorage.csv"
 pathForOstIn = "/home/grabow/ostrich/ravenApplication/ostIn.txt"
 
 lines = []
