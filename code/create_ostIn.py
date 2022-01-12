@@ -49,7 +49,7 @@ for index, row in calibrationDf.iterrows():
     subline.append("Date" + row["Datum"].strftime("%Y%m%d"))
     subline.append(str(row["Durchfluss"]))
     subline.append("1.00")
-    subline.append(pathToAbfluss)
+    subline.append(pathToAbflussRaven)
     subline.append(";")
     subline.append("OST_NULL")
     subline.append(str(rowNmb))
