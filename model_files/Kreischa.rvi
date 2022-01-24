@@ -12,7 +12,7 @@
 #
 # --Model Details -------------------------------
 :Interpolation       INTERP_NEAREST_NEIGHBOR
-:RainSnowFraction    RAINSNOW_HBV
+:RainSnowFraction    RAINSNOW_DATA
 :PotentialMeltMethod POTMELT_HBV
 :Routing             ROUTE_HYDROLOGIC
 :CatchmentRoute      ROUTE_TRI_CONVOLUTION
@@ -39,7 +39,7 @@
   :Flush             RAVEN_DEFAULT      SURFACE_WATER    FAST_RESERVOIR
   :SoilEvaporation   SOILEVAP_HBV       SOIL[0]          ATMOSPHERE
   :CapillaryRise     CRISE_HBV          FAST_RESERVOIR   SOIL[0]
-  :SoilEvaporation   SOILEVAP_HBV       FAST_RESERVOIR   ATMOSPHERE
+  :SoilEvaporation   SOILEVAP_GR4J       FAST_RESERVOIR   ATMOSPHERE
   :Percolation       PERC_CONSTANT      FAST_RESERVOIR   SLOW_RESERVOIR
   :Baseflow          BASE_POWER_LAW     FAST_RESERVOIR   SURFACE_WATER
   :Baseflow          BASE_LINEAR        SLOW_RESERVOIR   SURFACE_WATER
