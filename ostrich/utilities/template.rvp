@@ -1,0 +1,197 @@
+# --------------------------------------------
+# --------------------------------------------
+# Class definition ---------------------------
+:SoilClasses
+  :Attributes %SAND %CLAY %SILT %ORGANIC
+  :Units none none none none
+gS 0.85 0.05 0.1 0
+Ls2 0.35 0.2 0.45 0.03
+Ls3 0.45 0.2 0.35 0.03
+Ls4 0.55 0.2 0.25 0.01
+Lt2 0.3 0.3 0.4 0.01
+Lt3 0.2 0.4 0.4 0.02
+Lts 0.42 0.35 0.23 0
+Lu 0.14 0.24 0.62 0.03
+mS 0.85 0.05 0.1 0
+mSfs 0.85 0.05 0.1 0
+mSgs 0.85 0.05 0.1 0
+Sl2 0.77 0.06 0.17 0.01
+Sl3 0.62 0.1 0.28 0.02
+Sl4 0.5 0.14 0.36 0.02
+Slu 0.42 0.13 0.45 0.03
+St2 0.84 0.11 0.05 0
+St3 0.71 0.21 0.08 0.01
+Su2 0.8 0.02 0.18 0.01
+Su3 0.64 0.04 0.32 0.02
+Su4 0.51 0.04 0.45 0.02
+Tu3 0.1 0.37 0.53 0.03
+Tu4 0.05 0.3 0.65 0.01
+Uls 0.3 0.12 0.58 0.03
+Ut3 0.11 0.15 0.74 0
+Ut4 0.09 0.21 0.7 0.01
+:EndSoilClasses
+:SoilProfiles
+# name #horizons hor1 th1 hor2 th2 hor3 th3
+S_261 3 Sl4 0.02 Sl4 0.59 Sl4 0.59
+S_345 3 Slu 0.23 Slu 0.21 Slu 0.76
+S_492 3 Uls 0.2 Uls 0.52 Sl4 0.48
+S_522 3 Slu 0.26 Slu 0.24 Sl4 0.7
+S_513 3 Sl3 0.23 Sl3 0.32 Sl4 0.65
+S_299 3 Sl2 0.1 Uls 1.5 Su3 0.45
+S_1103 3 Lu 0.2 Lt2 0.75 Sl3 0.75
+S_505 3 Sl3 0.1 Sl4 0.35 Sl3 0.75
+S_500 3 Lu 0.27 Ut4 0.32 Slu 0.61
+S_276 3 Sl3 0.08 Sl3 0.22 Sl3 0.9
+S_491 3 Ut4 0.35 Lu 0.35 Ut4 0.8
+S_265 3 Ut3 0.3 Ut3 0.18 Ut4 1.02
+S_293 3 Uls 0.3 Ut4 1.3 Sl2 0.4
+S_496 3 Ut4 0.15 Ut4 0.15 Tu4 1.2
+S_507 3 Uls 0.05 Uls 0.35 Su2 0.6
+S_516 3 Ut3 0.4 Ut4 0.5 Lts 0.3
+S_529 3 Slu 0.4 Su3 0.45 Sl2 0.55
+S_525 3 Ut4 0.35 Uls 0.25 Ls2 0.6
+S_121 3 Slu 0.4 Sl3 0.4 Sl4 0.5
+S_279 3 Uls 0.31 Slu 0.14 Sl3 0.75
+S_487 3 Slu 0.28 Sl4 0.24 Sl4 0.68
+S_524 3 Slu 0.15 Uls 0.45 Ls2 0.9
+S_486 3 Uls 0.69 Sl3 0.43 Sl3 0.43
+S_502 3 Ls2 0.5 Lts 0.4 Sl3 0.6
+S_515 3 Lu 0.1 Ut3 0.2 Ut4 0.9
+S_494 3 Uls 0.4 Ls2 0.15 St2 0.95
+S_490 3 Lu 0.5 Lt2 0.3 Lts 0.5
+S_509 3 Uls 0.4 Uls 0.2 Ls4 0.7
+S_493 3 Sl4 0.4 Ls4 0.3 Sl3 0.6
+S_501 3 Sl3 0.4 Sl2 0.5 Sl4 0.6
+S_488 3 Sl4 0.15 Sl3 0.45 Slu 0.6
+S_510 3 Slu 0.23 Slu 0.12 Slu 0.85
+S_269 3 Slu 0.05 Sl3 0.25 Sl2 0.9
+S_498 3 Sl4 0.6 Sl2 0.45 gS 0.25
+S_503 3 Su2 0.55 mSgs 0.45 mSgs 0.5
+S_511 3 Ls2 0.2 Ls2 0.15 Lt3 0.85
+:EndSoilProfiles
+:SoilParameterList
+  :Parameters,  POROSITY,   FIELD_CAPACITY, SAT_WILT, HBV_BETA, MAX_CAP_RISE_RATE,  MAX_PERC_RATE,  BASEFLOW_COEFF, BASEFLOW_N
+  :Units     ,  none,     none,     none,   none,   mm/d,       mm/d,     1/d,      none
+  [DEFAULT],  Kal_POROSITY,   Kal_FIELD_CAPACITY, Kal_SAT_WILT, Kal_HBV_BETA, Kal_MAX_CAP_RISE_RATE,  Kal_MAX_PERC_RATE,  Kal_BASEFLOW_COEFF, Kal_BASEFLOW_N
+
+:EndSoilParameterList
+:VegetationClasses
+:Attributes MAXHT MAXLAI MAXLEAFCOND
+:Units m none mmpers
+LV_21 2 250 4
+LV_23 2 250 4
+LV_24 0.5 250 4
+LV_25 2 250 4
+LV_31 2 225 2.5
+LV_32 2 225 2.5
+LV_41 0.5 180 3
+LV_42 0.6 225 2.5
+LV_51 2 250 4
+LV_52 2 250 4
+LV_53 2 250 4
+LV_54 2 180 3
+LV_55 0.7 250 4
+LV_56 2 250 4
+LV_61 5 250 4
+LV_62 5 300 5.3
+LV_63 7 300 5.3
+LV_64 10 250 5.2
+LV_65 4 250 4
+LV_66 1 225 2.5
+LV_67 8 250 4
+LV_70 16 205 5.5
+LV_71 16 205 5.5
+LV_72 16 500 5
+LV_73 16 300 5.3
+LV_74 16 250 5.2
+LV_75 16 205 5.5
+LV_76 16 500 5
+LV_77 16 300 5.3
+LV_78 6 250 5.2
+LV_79 5 225 2.5
+LV_81 0.8 180 3
+LV_82 1.5 250 4
+LV_91 2 225 2.5
+LV_92 1 225 2.5
+LV_93 2 250 4
+LV_94 2 110 2
+LV_95 2 250 4
+LV_96 2 250 4
+:EndVegetationClasses
+
+:VegetationParameterList
+  :Parameters,  SAI_HT_RATIO, MAX_CAPACITY, MAX_SNOW_CAPACITY,  RAIN_ICEPT_FACT,  SNOW_ICEPT_FACT,  RAIN_ICEPT_PCT,   SNOW_ICEPT_PCT,
+  :Units,     none,     mm,       mm,         none,       none,             none,       none,
+  [DEFAULT],      Kal_SAI_HT_RATIO,      Kal_MAX_CAPACITY,    Kal_MAX_SNOW_CAPACITY,       Kal_RAIN_ICEPT_FACT,       Kal_SNOW_ICEPT_FACT,             Kal_RAIN_ICEPT_PCT,       Kal_SNOW_ICEPT_PCT,
+:EndVegetationParameterList
+
+
+:LandUseParameterList
+:Parameters,  MELT_FACTOR,  MIN_MELT_FACTOR,  HBV_MELT_FOR_CORR,  REFREEZE_FACTOR,  HBV_MELT_ASP_CORR
+:Units     ,  mm/d/K,     mm/d/K,       none,       mm/d/K,       none
+  [DEFAULT],    Kal_MELT_FACTOR,     Kal_MIN_MELT_FACTOR,       Kal_HBV_MELT_FOR_CORR,        Kal_REFREEZE_FACTOR,      Kal_HBV_MELT_ASP_CORR
+:EndLandUseParameterList
+
+
+:LandUseClasses
+:Attributes IMPERMEABLEFRAC FORESTCOVERAGE
+:Units fract fract
+LV_21 0 0
+LV_23 0 0
+LV_24 0 1
+LV_25 1 0
+LV_31 0 0.8
+LV_32 0 0.8
+LV_41 0 1
+LV_42 0 1
+LV_51 1 0
+LV_52 0.4 0.6
+LV_53 1 0
+LV_54 0 0
+LV_55 0 0.9
+LV_56 0.1 0.1
+LV_61 0 0.5
+LV_62 0 0.9
+LV_63 0 1
+LV_64 0 1
+LV_65 0 0.8
+LV_66 0 0.7
+LV_67 0 0.9
+LV_70 0 1
+LV_71 0 1
+LV_72 0 1
+LV_73 0 1
+LV_74 0 1
+LV_75 0 1
+LV_76 0 1
+LV_77 0 1
+LV_78 0 1
+LV_79 0 1
+LV_81 0 1
+LV_82 0 0.6
+LV_91 0.4 0.5
+LV_92 0.3 0.5
+LV_93 0.3 0.5
+LV_94 0 1
+LV_95 1 0
+LV_96 0.3 0.3
+:EndLandUseClasses
+:ChannelProfile DEFAULT
+  :Bedslope 0.001
+  :SurveyPoints
+    0 5
+    55 0
+    65 0
+    120 5
+  :EndSurveyPoints
+  :RoughnessZones
+    0 0.035
+  :EndRoughnessZones
+:EndChannelProfile
+#--- Global Parameters -------------------------
+:GlobalParameter RAINSNOW_TEMP     0.0
+:GlobalParameter RAINSNOW_DELTA    1.1559
+:GlobalParameter SNOW_SWI          0.05
+:GlobalParameter AVG_ANNUAL_RUNOFF 350 # mm
+
+# end -------------------
