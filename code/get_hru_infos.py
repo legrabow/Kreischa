@@ -154,6 +154,6 @@ def main(pathToHRUs, pathToDEM, pathToSubbasins, pathForSlope, pathForAspect):
                         except TypeError:
                             continue
 
-                        hruID = str(hru["properties"]["level_0"]) + str(hru["properties"]["level_0"])
+                        hruID = str(hru["properties"]["level_0"]) + str(hru["properties"]["level_1"])
                         hruDict[hruID] = infoDict
     return hruDict

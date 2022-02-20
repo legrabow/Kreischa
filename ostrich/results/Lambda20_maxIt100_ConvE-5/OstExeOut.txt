@@ -190,8 +190,8 @@ Simulation Start...
 2008-12-01
 ======================================================
 ...Raven Simulation Complete: run1
-    Parsing & initialization: 0.159102 seconds elapsed . 
-                  Simulation: 58.4398 seconds elapsed . 
+    Parsing & initialization: 0.161108 seconds elapsed . 
+                  Simulation: 58.419 seconds elapsed . 
   Output written to /home/grabow/raven/bin/temp_out_raven/
 ======================================================
 
