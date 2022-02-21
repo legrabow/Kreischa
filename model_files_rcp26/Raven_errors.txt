@@ -1,0 +1,96 @@
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_25_07
+WARNING : REL_HUMIDITY data supplied at gauge GP_25_07 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_25_07 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_25_07 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_25_08
+WARNING : REL_HUMIDITY data supplied at gauge GP_25_08 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_25_08 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_25_08 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_25_09
+WARNING : REL_HUMIDITY data supplied at gauge GP_25_09 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_25_09 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_25_09 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_25_10
+WARNING : REL_HUMIDITY data supplied at gauge GP_25_10 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_25_10 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_25_10 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_26_07
+WARNING : REL_HUMIDITY data supplied at gauge GP_26_07 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_26_07 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_26_07 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_26_08
+WARNING : REL_HUMIDITY data supplied at gauge GP_26_08 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_26_08 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_26_08 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_26_09
+WARNING : REL_HUMIDITY data supplied at gauge GP_26_09 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_26_09 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_26_09 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_26_10
+WARNING : REL_HUMIDITY data supplied at gauge GP_26_10 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_26_10 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_26_10 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_27_07
+WARNING : REL_HUMIDITY data supplied at gauge GP_27_07 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_27_07 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_27_07 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_27_08
+WARNING : REL_HUMIDITY data supplied at gauge GP_27_08 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_27_08 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_27_08 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_27_09
+WARNING : REL_HUMIDITY data supplied at gauge GP_27_09 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_27_09 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_27_09 but will not be used due to choice of forcing generation algorithm
+WARNING : CGauge::AddTimeSeries: a time series of data has been overwritten at  gauge GP_27_10
+WARNING : REL_HUMIDITY data supplied at gauge GP_27_10 but will not be used due to choice of forcing generation algorithm
+WARNING : AIR_PRES data supplied at gauge GP_27_10 but will not be used due to choice of forcing generation algorithm
+WARNING : WIND_VEL data supplied at gauge GP_27_10 but will not be used due to choice of forcing generation algorithm
+ADVISORY : Reach length in basin 53719211 was estimated from basin area to be 1.484948 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719212 was estimated from basin area to be 2.532364 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719213 was estimated from basin area to be 1.839991 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192161 was estimated from basin area to be 2.141877 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192162 was estimated from basin area to be 1.638116 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719221 was estimated from basin area to be 1.850294 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719222 was estimated from basin area to be 0.986560 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719215 was estimated from basin area to be 1.173006 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192169 was estimated from basin area to be 0.615117 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719223 was estimated from basin area to be 0.733541 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719224 was estimated from basin area to be 1.680856 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719219 was estimated from basin area to be 2.290482 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719229 was estimated from basin area to be 0.774843 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719231 was estimated from basin area to be 0.694857 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719232 was estimated from basin area to be 2.988741 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192331 was estimated from basin area to be 1.065894 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192332 was estimated from basin area to be 1.722832 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192333 was estimated from basin area to be 0.012787 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192334 was estimated from basin area to be 0.686100 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 537192339 was estimated from basin area to be 2.023753 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719234 was estimated from basin area to be 2.153177 km. (this will not be used in headwater basins)
+ADVISORY : Reach length in basin 53719235 was estimated from basin area to be 1.864649 km. (this will not be used in headwater basins)
+ADVISORY : CModel::InitializeBasinFlows: one or more subbasin reference discharges were autogenerated from annual average runoff
+ADVISORY : CModel::InitializeBasinFlows: one or more subbasin initial outflows were autogenerated from annual average runoff
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_07 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_08 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_09 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_10 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_07 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_08 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_09 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_10 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_07 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_08 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_09 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_10 on 2010-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_07 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_08 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_09 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_25_10 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_08 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_09 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_26_10 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_07 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_08 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_09 on 2011-07-17
+WARNING : UpdateHRUForcingFunctions: max_temp<min_temp at gauge: GP_27_10 on 2011-07-17
+SIMULATION COMPLETE :)
