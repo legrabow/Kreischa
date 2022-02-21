@@ -1,0 +1,111 @@
+#--------------------------------------------
+# Raven Time Series Input file
+#--------------------------------------------
+:Gauge GP_25_07 (ID:1802507)
+	:Latitude 50.7245
+	:Longitude 13.6614
+	:Elevation 770
+	:MonthlyMinTemperature [-4.08 -1.74 0.56 3.28 7.65 11.23 13.36 13.96 10.41 5.76 -0.23 -1.74]
+	:MonthlyMaxTemperature [1.46 3.79 7.35 11.98 17.27 21.19 24.41 26.44 20.59 13.02 5.17 3.27]
+	:MonthlyAveTemperature [-1.27 1.05 3.77 7.33 12.35 16.22 18.93 20.14 15.38 9.42 2.3 0.71]
+	:RedirectToFile GP_25_07.rvt
+:EndGauge
+:Gauge GP_25_08 (ID:1802508)
+	:Latitude 50.8343
+	:Longitude 13.6512
+	:Elevation 554
+	:MonthlyMinTemperature [-3.19 -0.81 1.49 3.98 8.2 11.85 13.88 14.22 10.87 6.51 0.77 -0.63]
+	:MonthlyMaxTemperature [2.87 5.48 9.16 13.6 19.0 22.93 26.15 28.17 22.27 14.73 6.69 4.78]
+	:MonthlyAveTemperature [-0.14 2.3 5.14 8.54 13.58 17.5 20.14 21.12 16.4 10.57 3.58 2.03]
+	:RedirectToFile GP_25_08.rvt
+:EndGauge
+:Gauge GP_25_09 (ID:1802509)
+	:Latitude 50.9441
+	:Longitude 13.6409
+	:Elevation 346
+	:MonthlyMinTemperature [-2.09 0.33 2.72 5.0 9.16 12.87 14.99 15.19 11.85 7.52 1.98 0.71]
+	:MonthlyMaxTemperature [4.22 7.09 10.89 15.19 20.7 24.73 28.04 29.97 23.93 16.35 8.18 6.3]
+	:MonthlyAveTemperature [1.11 3.71 6.61 9.9 14.91 18.9 21.59 22.5 17.68 11.8 4.95 3.53]
+	:RedirectToFile GP_25_09.rvt
+:EndGauge
+:Gauge GP_25_10 (ID:1802510)
+	:Latitude 51.0539
+	:Longitude 13.6306
+	:Elevation 213
+	:MonthlyMinTemperature [-1.17 1.18 3.56 5.78 9.9 13.58 15.73 16.01 12.64 8.32 2.83 1.55]
+	:MonthlyMaxTemperature [4.69 7.69 11.7 16.06 21.47 25.58 28.94 30.84 24.61 17.0 8.72 6.84]
+	:MonthlyAveTemperature [1.82 4.47 7.43 10.79 15.7 19.67 22.41 23.4 18.48 12.57 5.67 4.26]
+	:RedirectToFile GP_25_10.rvt
+:EndGauge
+:Gauge GP_26_07 (ID:1802607)
+	:Latitude 50.7308
+	:Longitude 13.8349
+	:Elevation 664
+	:MonthlyMinTemperature [-3.93 -1.45 0.92 3.68 8.03 11.64 13.73 14.26 10.66 6.04 0.0 -1.49]
+	:MonthlyMaxTemperature [1.64 4.19 7.9 12.62 17.95 21.85 25.03 27.04 21.1 13.46 5.42 3.51]
+	:MonthlyAveTemperature [-1.11 1.37 4.25 7.88 12.93 16.79 19.47 20.61 15.78 9.79 2.57 0.97]
+	:RedirectToFile GP_26_07.rvt
+:EndGauge
+:Gauge GP_26_08 (ID:1802608)
+	:Latitude 50.8406
+	:Longitude 13.8251
+	:Elevation 459
+	:MonthlyMinTemperature [-2.86 -0.33 2.08 4.61 8.82 12.48 14.55 14.82 11.39 6.96 1.19 -0.19]
+	:MonthlyMaxTemperature [3.21 6.04 9.94 14.49 19.91 23.88 27.12 29.09 23.02 15.35 7.12 5.21]
+	:MonthlyAveTemperature [0.2 2.84 5.85 9.35 14.36 18.28 20.95 21.89 17.04 11.09 4.03 2.5]
+	:RedirectToFile GP_26_08.rvt
+:EndGauge
+:Gauge GP_26_09 (ID:1802609)
+	:Latitude 50.9505
+	:Longitude 13.8152
+	:Elevation 239
+	:MonthlyMinTemperature [-1.53 0.96 3.33 5.6 9.67 13.37 15.47 15.71 12.34 8.02 2.53 1.26]
+	:MonthlyMaxTemperature [4.52 7.54 11.62 16.08 21.51 25.58 28.87 30.75 24.49 16.83 8.53 6.71]
+	:MonthlyAveTemperature [1.56 4.3 7.29 10.72 15.61 19.59 22.25 23.16 18.27 12.36 5.44 4.04]
+	:RedirectToFile GP_26_09.rvt
+:EndGauge
+:Gauge GP_26_10 (ID:1802610)
+	:Latitude 51.0603
+	:Longitude 13.8053
+	:Elevation 172
+	:MonthlyMinTemperature [-1.02 1.39 3.74 5.95 10.02 13.71 15.83 16.12 12.76 8.49 3.01 1.76]
+	:MonthlyMaxTemperature [4.76 7.81 11.93 16.37 21.72 25.84 29.17 31.02 24.69 17.08 8.81 6.99]
+	:MonthlyAveTemperature [1.96 4.65 7.66 11.04 15.91 19.87 22.57 23.55 18.63 12.75 5.82 4.43]
+	:RedirectToFile GP_26_10.rvt
+:EndGauge
+:Gauge GP_27_07 (ID:1802707)
+	:Latitude 50.7369
+	:Longitude 14.0084
+	:Elevation 462
+	:MonthlyMinTemperature [-3.9 -1.38 1.05 3.83 8.17 11.74 13.84 14.35 10.76 6.1 0.06 -1.46]
+	:MonthlyMaxTemperature [1.7 4.32 8.1 12.84 18.17 22.07 25.25 27.26 21.28 13.6 5.5 3.58]
+	:MonthlyAveTemperature [-1.06 1.48 4.41 8.09 13.11 16.95 19.64 20.77 15.9 9.89 2.64 1.03]
+	:RedirectToFile GP_27_07.rvt
+:EndGauge
+:Gauge GP_27_08 (ID:1802708)
+	:Latitude 50.8467
+	:Longitude 13.9990
+	:Elevation 424
+	:MonthlyMinTemperature [-2.67 -0.05 2.45 5.07 9.19 12.84 14.9 15.2 11.67 7.22 1.43 -0.01]
+	:MonthlyMaxTemperature [3.25 6.26 10.42 15.13 20.54 24.5 27.73 29.71 23.43 15.61 7.2 5.29]
+	:MonthlyAveTemperature [0.33 3.15 6.31 9.95 14.9 18.78 21.46 22.43 17.44 11.4 4.22 2.68]
+	:RedirectToFile GP_27_08.rvt
+:EndGauge
+:Gauge GP_27_09 (ID:1802709)
+	:Latitude 50.9566
+	:Longitude 13.9896
+	:Elevation 209
+	:MonthlyMinTemperature [-1.53 1.02 3.45 5.82 9.86 13.49 15.59 15.85 12.4 8.06 2.57 1.21]
+	:MonthlyMaxTemperature [4.36 7.46 11.74 16.36 21.79 25.82 29.09 30.96 24.55 16.78 8.37 6.54]
+	:MonthlyAveTemperature [1.49 4.33 7.44 11.01 15.88 19.81 22.45 23.39 18.39 12.4 5.4 3.96]
+	:RedirectToFile GP_27_09.rvt
+:EndGauge
+:Gauge GP_27_10 (ID:1802710)
+	:Latitude 51.0664
+	:Longitude 13.9801
+	:Elevation 265
+	:MonthlyMinTemperature [-1.58 0.91 3.29 5.62 9.75 13.39 15.48 15.78 12.38 8.08 2.51 1.14]
+	:MonthlyMaxTemperature [4.23 7.22 11.34 15.86 21.29 25.34 28.62 30.53 24.2 16.53 8.21 6.38]
+	:MonthlyAveTemperature [1.35 4.11 7.15 10.62 15.56 19.47 22.14 23.13 18.19 12.28 5.26 3.83]
+	:RedirectToFile GP_27_10.rvt
+:EndGauge
