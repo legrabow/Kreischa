@@ -1,6 +1,14 @@
 # Kreischa
 Modelling the catchment area Kreischa (historical and future scenarios) with the hydrological model Raven as part of the lecture MHYD05 "Einzugsgebietsmodellierung" at TU Dresden.
 
+
+# Content
+**code** contains python code for creating Raven and Ostrich input files as well as hydrological response units (HRU).  
+**data** contains geographical (shp's) and soil data.   
+**model_files** contains Raven input files and results for the historical run.  
+**model_files_rcp*** contains Raven input files for the future run (2006 - 2100).  
+**ostrich** contains utilities and results of parametrization with ostrich.  
+
 # Data Source
 #### 1. historical meteorological data (DWD's open data server)
 https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/   
@@ -14,9 +22,8 @@ https://www.natur.sachsen.de/biotoptypen-und-landnutzungskartierung-btlnk-22282.
 #### 5. DEM (GeoSN)
 https://www.landesvermessung.sachsen.de/verfugbarkeit-aktualitat-5305.html
 
-# Content
-**code** contains python code for creating Raven and Ostrich input files as well as hydrological response units (HRU).  
-**data** contains geographical (shp's) and soil data.   
-**model_files** contains Raven input files and results for the historical run.  
-**model_files_rcp*** contains Raven input files for the future run (2006 - 2100).  
-**ostrich** contains utilities and results of parametrization with ostrich.  
+# Packages and Dependencies
+#### Python
+datetime, fiona, geopandas, glob, math, matplotlib, numpy, os, pandas, proplot, pymannkendall, rasterio, richdem, scipy, shapely, sys   
+#### R
+todo
