@@ -9,6 +9,14 @@ Modelling the catchment area Kreischa (historical and future scenarios) with the
 **model_files_rcp*** contains Raven input files for the future run (2006 - 2100).  
 **ostrich** contains utilities and results of parametrization with ostrich.  
 
+# Overview
+<img src="workflow.png" alt="workflow" width="900"/>   
+
+# Usage
+1. Download and compile the model Raven.
+2. Add model_files* into the model's directory.
+3. Run model with ```./Raven.exe Kreischa```.
+
 # Data Source
 #### 1. historical meteorological data (DWD's open data server)
 https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/   
@@ -24,6 +32,6 @@ https://www.landesvermessung.sachsen.de/verfugbarkeit-aktualitat-5305.html
 
 # Packages and Dependencies
 #### Python
-datetime, fiona, geopandas, glob, math, matplotlib, numpy, os, pandas, proplot, pymannkendall, rasterio, richdem, scipy, shapely, sys   
+datetime 4.3, fiona, geopandas, matplotlib 3.5.1, numpy 1.22.0, pandas, proplot 0.9.5, pymannkendall 1.4.2, rasterio, richdem, scipy 1.7.3, shapely   
 #### R
 todo
