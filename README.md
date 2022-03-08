@@ -5,8 +5,8 @@ Modelling the catchment area Kreischa (historical and future scenarios) with the
 # Content
 **code** contains python code for creating Raven and Ostrich input files as well as hydrological response units (HRU).  
 **data** contains geographical (shp's) and soil data.   
-**model_files** contains Raven input files and results for the historical run.  
-**model_files_rcp*** contains Raven input files for the future run (2006 - 2100).  
+**model_files** contains Raven input files and results for the historical run (2001 - 2019).  
+**model_files_rcp*** contains Raven input files and results for the future run (2006 - 2100).  
 **ostrich** contains utilities and results of parametrization with ostrich.  
 
 # Overview
