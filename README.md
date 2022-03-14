@@ -34,4 +34,5 @@ https://www.landesvermessung.sachsen.de/verfugbarkeit-aktualitat-5305.html
 #### Python
 datetime 4.3, fiona, geopandas, matplotlib 3.5.1, numpy 1.22.0, pandas, proplot 0.9.5, pymannkendall 1.4.2, rasterio, richdem, scipy 1.7.3, shapely   
 #### R
-todo
+- `tidyverse` for data processig and plot, 
+- `dds.R` in Code for caliberate
